@@ -17,7 +17,6 @@ public class Board : MonoBehaviour
     
     // Awake() initilizes the gameboard
     private void Awake() {
-        Debug.Log("board.Awake");
         this.tilemap = GetComponentInChildren<Tilemap>();
         this.activePiece = GetComponentInChildren<Piece>();
 
@@ -57,7 +56,6 @@ public class Board : MonoBehaviour
     public void Set(Piece piece) {
         for (int i = 0; i < piece.cells.Length; i++) {
             Vector3Int tilePosition = piece.cells[i] + piece.position;
-            Debug.Log(tilePosition);
             this.tilemap.SetTile(tilePosition, piece.data.tile);
         }
     }
@@ -66,7 +64,6 @@ public class Board : MonoBehaviour
     public void Clear(Piece piece) {
        for (int i = 0; i < piece.cells.Length; i++) {
             Vector3Int tilePosition = piece.cells[i] + piece.position;
-            Debug.Log(tilePosition);
             this.tilemap.SetTile(tilePosition, null);
         }
     }
