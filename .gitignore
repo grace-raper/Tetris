@@ -60,6 +60,10 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
+
+## added by me for this specific repo
+.idea/
+.DS_Store
 mono_crash.mem.26340.1.blob
 
 # Crashlytics generated file
