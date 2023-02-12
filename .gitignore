@@ -60,6 +60,7 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
+mono_crash.mem.26340.1.blob
 
 # Crashlytics generated file
 crashlytics-build.properties
